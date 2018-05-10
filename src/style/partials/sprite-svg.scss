@@ -1,0 +1,72 @@
+.icon {
+    font-size: 10px;
+    &:before {
+      content:' ';
+      vertical-align:middle;
+      display: inline-block;
+      background-image: url("../img/svg/sprite.svg");
+      background-repeat: no-repeat;
+      background-size: 36.61em 98.5em;
+
+      .no-svg & {
+        background-image: url("../svg/sprite.png");
+      }
+    }
+}
+
+
+
+
+.icon.svg-logo {
+  &:before {
+      background-position: -1em -1em;
+      width: 34.61em;
+      height: 7.609999999999999em;
+    }
+  }
+
+  @mixin icon-svg-logo(){
+    @extend .svg-logo;
+  }
+
+
+.icon.svg-man {
+  &:before {
+      background-position: -1em -10.7em;
+      width: 28.03em;
+      height: 28.339999999999996em;
+    }
+  }
+
+  @mixin icon-svg-man(){
+    @extend .svg-man;
+  }
+
+
+.icon.svg-user {
+  &:before {
+      background-position: -1em -41.1em;
+      width: 16.1em;
+      height: 16.1em;
+    }
+  }
+
+  @mixin icon-svg-user(){
+    @extend .svg-user;
+  }
+
+
+.icon.svg-woman {
+  &:before {
+      background-position: -1em -59.2em;
+      width: 29.619999999999997em;
+      height: 38.260000000000005em;
+    }
+  }
+
+  @mixin icon-svg-woman(){
+    @extend .svg-woman;
+  }
+
+
+
